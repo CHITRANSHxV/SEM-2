@@ -1,0 +1,24 @@
+2.)
+//COUNT THE NUMBER OF ELEMENTS IN AN ARRAY GREATER THAN A NUMBER X.
+
+
+#include <stdio.h>
+int main() {
+    int arr[100],i,n,x,c;
+   printf("INPUT NUMBER OF ELEMENTS\n");
+   scanf("%d",&n);
+   printf("ENTER ELEMENTS\n");
+   for(i=0;i<n;i++){
+       printf("ENTER ELEMENTS\n");
+       scanf("%d",&arr[i]);
+   }
+   printf("ENTER NUMBER TO BE CHECKED\n");
+   scanf("%d",&x);
+   for(i=0;i<n;i++){
+      if(arr[i]>x){
+          c++;
+      }
+   }
+   printf("%d",c);
+   return 0;
+}
